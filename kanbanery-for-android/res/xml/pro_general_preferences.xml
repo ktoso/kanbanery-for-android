@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <PreferenceCategory android:title="@string/general_preference_category">
+
+      <PreferenceScreen
+            android:title="@string/get_pro_now_title"
+            android:summary="@string/get_pro_now_summary"
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="market://details?id=pl.project13.kanbanery.topsecretunlockerapp"/>
+         <!-- todo check if it's ok -->
+      </PreferenceScreen>
+
+   </PreferenceCategory>
+
+   <PreferenceCategory
+         android:title="@string/homepages_preference_category">
+
+      <PreferenceScreen
+            android:title="@string/kanbanery_homepage_title"
+            android:summary="@string/kanbanery_homepage_summary"
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://www.kanbanery.com"/>
+      </PreferenceScreen>
+
+      <PreferenceScreen
+            android:title="@string/kanbanery_for_android_homepage_label"
+            android:summary="@string/kanbanery_for_android_homepage_summary"
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://kanbanery.for.android.project13.pl/"/>
+      </PreferenceScreen>
+
+      <PreferenceScreen
+            android:title="@string/blog_project13_title"
+            android:summary="@string/blog_project13_summary"
+            android:icon="@drawable/ic_project13">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://www.blog.project13.pl"/>
+      </PreferenceScreen>
+   </PreferenceCategory>
+</PreferenceScreen>

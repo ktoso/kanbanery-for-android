@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExpandableListView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/workspaces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:background="@drawable/bg">
+
+   <!-- workspaces -->
+   <!-- and workspaces_and_projects in them -->
+   <!-- will be fetched at runtime -->
+
+</ExpandableListView>

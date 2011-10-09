@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+   <TextView android:id="@+id/body"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:layout_weight="1"
+             android:padding="5dip"
+             android:text="sample comment message "/>
+   <ImageButton android:id="@+id/commenter_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_contact_picture_small"
+                android:maxHeight="@dimen/owner_small_maxHeight"
+                android:maxWidth="@dimen/owner_small_maxWidth"
+                android:layout_marginRight="5dip"/>
+</LinearLayout>

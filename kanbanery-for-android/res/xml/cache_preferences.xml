@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory
+         android:title="@string/images_cache_category"
+         android:summary="@string/images_cache_category_summary">
+
+
+      <PreferenceScreen android:title="@string/clear_image_cache"
+                        android:summary="@string/clear_image_cache_summary"
+                        android:icon="@drawable/wrench">
+         <intent android:targetPackage="pl.project13.kanbanery"
+                 android:targetClass="pl.project13.kanbanery.ui.activities.dialog.CleanCacheDialog"/>
+      </PreferenceScreen>
+   </PreferenceCategory>
+
+</PreferenceScreen>

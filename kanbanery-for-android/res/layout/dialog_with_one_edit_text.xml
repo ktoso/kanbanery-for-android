@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@drawable/bg">
+
+
+   <TextView android:id="@+id/body_label"
+         android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="@string/new_comment_body"/>
+   <EditText android:id="@+id/body"
+             android:layout_width="fill_parent"
+             android:lines="4"
+             android:layout_height="wrap_content"/>
+
+
+   <include layout="@layout/create_cancel_buttons"/>
+</LinearLayout>

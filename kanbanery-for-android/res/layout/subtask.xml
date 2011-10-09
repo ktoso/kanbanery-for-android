@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+   <TextView android:id="@+id/subtask_body"
+             android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:layout_weight="1"
+             android:padding="5dip"
+             android:text="sample subtask "/>
+   
+   <CheckBox android:id="@+id/subtask_status_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"/>
+</LinearLayout>

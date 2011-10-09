@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/board_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:fadingEdge="horizontal|vertical"
+            android:background="@drawable/bg"
+            android:focusableInTouchMode="true">
+
+    <LinearLayout android:id="@+id/columns_container"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:orientation="horizontal"/>
+</HorizontalScrollView>

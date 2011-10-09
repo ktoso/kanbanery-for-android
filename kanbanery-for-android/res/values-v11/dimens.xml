@@ -1,0 +1,10 @@
+<resources>
+
+   <dimen name="owner_maxWidth">10dp</dimen>
+   <dimen name="owner_maxHeight">10dp</dimen>
+
+   <dimen name="owner_small_maxWidth">5dp</dimen>
+   <dimen name="owner_small_maxHeight">5dp</dimen>
+
+   <dimen name="assign_task_dialog_height">350dp</dimen>
+</resources>

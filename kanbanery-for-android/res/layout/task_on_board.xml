@@ -1,0 +1,218 @@
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/top_level_container"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+   <LinearLayout android:layout_width="fill_parent"
+                 android:layout_height="wrap_content">
+      <Button android:id="@+id/task_type_btn"
+              android:editable="false"
+              android:text="taskType"
+              android:layout_height="30dp"
+              android:layout_width="wrap_content"
+              android:hapticFeedbackEnabled="true"
+              android:padding="5dp"
+              android:background="@color/kanbanery_tasktype_yellow"/>
+      <Button android:id="@+id/estimate_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="30dp"
+              android:text=" - "
+              android:hapticFeedbackEnabled="true"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:textColor="@color/white"
+              android:background="@color/estimateGray"/>
+   </LinearLayout>
+   <LinearLayout android:layout_width="fill_parent"
+                 android:padding="6dip"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/transparent">
+      <ImageButton android:id="@+id/task_owner_image_btn"
+            android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hapticFeedbackEnabled="true"
+                   android:clickable="true"
+                   android:background="@android:color/transparent"
+                   android:maxHeight="@dimen/owner_maxHeight"
+                   android:maxWidth="@dimen/owner_maxWidth"
+                   android:src="@drawable/ic_contact_picture_2"
+                   android:layout_marginRight="5dip"/>
+      <LinearLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/linearLayout2">
+         <LinearLayout android:layout_width="fill_parent"
+                       android:layout_height="fill_parent">
+            <LinearLayout android:layout_width="0dip"
+                          android:layout_height="fill_parent"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:background="@android:color/transparent"
+                          android:id="@+id/task_middle_contents">
+               <TextView android:background="@android:color/transparent"
+                         android:id="@+id/top_text"
+                         android:text="A user can do this and that, but not the other thing."
+                         android:textSize="15dp"
+                         android:textStyle="bold"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:lines="2"
+                         android:gravity="center_vertical"/>
+               <TextView android:background="@android:color/transparent"
+                         android:id="@+id/bottom_text"
+                         android:ellipsize="marquee"
+                         android:layout_width="fill_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:singleLine="true"/>
+               <!-- don't remove me :-) -->
+               <TextView android:id="@+id/task_id"
+                         android:layout_width="0dip"
+                         android:layout_height="0dip"
+                         android:visibility="invisible"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/is_ready_to_pull"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/ic_not_ready_to_pull"/>
+         </LinearLayout>
+
+         <!-- actions bar-->
+         <LinearLayout android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/quick_actions">
+
+            <Button android:id="@+id/move_btn"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:hapticFeedbackEnabled="true"
+                    android:textSize="@dimen/small_button_text_size"
+                    android:layout_margin="2dp"
+                    android:padding="5px"
+                    android:background="@android:color/darker_gray"
+                    android:text="@string/move"/>
+
+            <!--<ImageButton android:layout_width="16px"-->
+            <!--android:layout_height="16px"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:id="@+id/imagebtn2"-->
+            <!--android:src="@drawable/subscribe_unsubscribe"/>-->
+            <!--<ImageButton android:layout_width="16px"-->
+            <!--android:layout_height="16px"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:id="@+id/imagebtn1"-->
+            <!--android:src="@drawable/icon_issue"/>-->
+            <!--<LinearLayout android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/comments_counter_container">-->
+            <!--<ImageButton android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/icon_comment"/>-->
+            <!--<TextView android:id="@+id/comments_count_text"-->
+            <!--android:text="2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+            <!--</LinearLayout>-->
+
+            <ImageButton android:id="@+id/delete_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                         android:hapticFeedbackEnabled="true"
+                         android:background="@android:color/darker_gray"
+                         android:padding="5dp"
+                         android:layout_margin="2dp"
+                         android:src="@drawable/icon_delete"/>
+            <!--<ImageButton android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/block_task_btn"-->
+            <!--android:src="@drawable/icon_block"/>-->
+            <!--<ImageButton android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/deadline_btn"-->
+            <!--android:src="@drawable/icon_deadline"/>-->
+            <ImageButton android:id="@+id/new_comment_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:hapticFeedbackEnabled="true"
+                         android:padding="5dp"
+                                                  android:layout_margin="2dp"
+                         android:background="@android:color/darker_gray"
+                         android:src="@drawable/icon_comment_add"/>
+
+            <ImageButton android:id="@+id/details_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:hapticFeedbackEnabled="true"
+                         android:padding="8dp"
+                       android:layout_margin="2dp"
+                         android:background="@android:color/darker_gray"
+                         android:src="@drawable/icon_expand"/>
+         </LinearLayout>
+      </LinearLayout>
+   </LinearLayout>
+
+   <!-- the initially hidden part -->
+   <LinearLayout android:id="@+id/details_layout"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:orientation="vertical">
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal">
+         <View android:background="@color/gray"
+               android:layout_height="3dip"
+               android:layout_width="wrap_content"
+               android:layout_weight="50"
+               android:layout_marginTop="5dip"
+               />
+         <TextView android:id="@+id/hide_details_text_view"
+                   android:text="hide details"
+                   android:textColor="@color/gray"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:layout_weight="0"
+                   android:paddingLeft="10dip"
+                   android:paddingRight="10dip"
+                   android:gravity="center"
+               />
+         <View android:background="@color/gray"
+               android:layout_height="3dip"
+               android:layout_width="wrap_content"
+               android:layout_weight="50"
+               android:layout_marginTop="5dip"
+               />
+      </LinearLayout>
+
+
+      <TextView android:text="Description: "
+                style="@style/bold"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+            />
+      <TextView android:id="@+id/description_txt"
+                android:text="sample description sample description sample description sample description "
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+            />
+
+      <include android:id="@+id/comments"
+               layout="@layout/comments_under_task_on_board"
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"/>
+
+      <include android:id="@+id/subtasks"
+               layout="@layout/subtasks_under_task_on_board"
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"/>
+
+   </LinearLayout>
+
+   <View android:background="@color/gray"
+         android:layout_height="3dip"
+         android:layout_width="wrap_content"
+         android:layout_marginTop="5dip"
+         android:layout_marginBottom="5dip"/>
+</LinearLayout>

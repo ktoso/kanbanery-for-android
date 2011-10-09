@@ -1,0 +1,6 @@
+*.class
+*.apk
+*~
+
+out
+target

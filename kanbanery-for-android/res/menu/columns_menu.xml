@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item android:id="@+id/new_task_menu_btn"
+         android:icon="@drawable/icon_add_task"
+         android:title="@string/new_task_menu_title"
+         />
+
+   <item android:id="@+id/columns_refresh"
+         android:icon="@drawable/icon_arrow_refresh"
+         android:title="@string/columns_refresh"
+         />
+
+   <item android:id="@+id/new_column_menu_btn"
+         android:icon="@drawable/icon_add"
+         android:title="@string/new_column_menu_title"
+         />
+
+   <item android:id="@+id/switch_project"
+         android:icon="@drawable/icon_back"
+         android:title="@string/switch_project"/>
+
+   <item android:id="@+id/open_settings"
+         android:icon="@drawable/wrench"
+         android:title="@string/settings"/>
+
+   <item android:id="@+id/columns_sign_out"
+         android:icon="@drawable/icon_door_out"
+         android:title="@string/sign_out"/>
+</menu>

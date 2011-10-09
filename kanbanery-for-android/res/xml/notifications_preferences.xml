@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/action_notifications_category_title">
+
+        <CheckBoxPreference
+                android:key="@string/preference_key_action_notifications"
+                android:title="@string/use_new_action_notifications_title"
+                android:summary="@string/use_new_action_notifications_summary"/>
+
+        <RingtonePreference
+                android:title="@string/action_notification_sound_title"
+                android:dependency="@string/preference_key_action_notifications"
+                android:ringtoneType="notification"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/notifications_when_wifi_3g_category_title">
+        <CheckBoxPreference android:title="... when connected via WiFi"
+                            android:summary="Fetch for data when connected via WiFi"/>
+        <CheckBoxPreference android:title="... when connected via 3G/4G network"
+                            android:summary="Slower than WiFi most of the time, but available everywhere. Additional costs may apply."/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

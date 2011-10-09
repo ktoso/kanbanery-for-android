@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="pl.project13.kanbanery"
+          android:versionCode="4"
+          android:versionName="1.0">
+
+   <application android:name=".guice.app.KanbaneryApplication"
+                android:label="@string/app_name"
+                android:icon="@drawable/ic_kanbanery"
+                android:allowBackup="true"
+                android:debuggable="true">
+      <!--android:theme="@android:style/Theme.NoTitleBar"-->
+
+      <!-- **************************************** ACTIVITIES **************************************** -->
+      <activity android:name=".ui.activities.ColumnsActivity"
+                android:label="Kanbanery - Columns">
+      </activity>
+
+      <activity android:name=".ui.activities.WorkspacesAndProjectsActivity"
+                android:label="Kanbanery - Projects">
+      </activity>
+
+      <activity android:name=".ui.activities.BoardActivity"
+                android:label="Kanbanery - Board">
+      </activity>
+
+      <activity android:name=".ui.activities.SignInActivity"
+                android:label="Kanbanery">
+         <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+         </intent-filter>
+      </activity>
+
+      <!-- ACRA Activity -->
+      <!--suppress AndroidDomInspection -->
+      <activity android:name="org.acra.CrashReportDialog"
+                android:theme="@android:style/Theme.Dialog"
+                android:launchMode="singleInstance"
+                android:excludeFromRecents="true"
+                android:finishOnTaskLaunch="true"/>
+
+      <!-- DIALOG ACTIVITIES -->
+      <activity android:name=".ui.activities.dialog.NewColumnDialog"
+                android:label="@string/create_new_column_label"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.NewSubTaskDialog"
+                android:label="@string/create_new_subtask_label"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.AssignTaskDialog"
+                android:label="@string/assign_task_to_label"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.NewCommentDialog"
+                android:label="@string/create_new_comment_label"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.GetPremiumVersionDialog"
+                android:excludeFromRecents="true"
+                android:label="@string/get_pro_dialog_title"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.NewTaskDialog"
+                android:label="@string/create_a_new_task"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Dialog"/>
+
+      <activity android:name=".ui.activities.dialog.CleanCacheDialog"
+                android:excludeFromRecents="true"
+                android:theme="@android:style/Theme.Dialog">
+         <intent-filter>
+            <action android:name="pl.project13.kanbanery.service.CLEAN_IMAGE_CACHE"/>
+         </intent-filter>
+      </activity>
+
+      <activity android:name=".ui.activities.SettingsActivity"
+                android:excludeFromRecents="true">
+      </activity>
+
+      <!-- **************************************** SERVICES **************************************** -->
+      <service android:name=".service.KanbaneryActionsNotifierService"/>
+
+      <!-- **************************************** RECEIVERS **************************************** -->
+      <receiver android:name=".receiver.StartServiceAtBootReceiver"
+                android:process=":receiversProcess">
+         <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+         </intent-filter>
+      </receiver>
+   </application>
+
+   <!-- **************************************** PERMISSIONS STUFF **************************************** -->
+   <uses-sdk android:minSdkVersion="7"
+             android:targetSdkVersion="12"/>
+
+   <!-- for kanbanery connection -->
+   <uses-permission android:name="android.permission.INTERNET"/>
+   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+   <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+   <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+   <!-- TESTING STUFF -->
+   <!--<uses-library android:name="android.test.runner"/>-->
+   <!--suppress AndroidDomInspection -->
+   <instrumentation android:name="android.test.InstrumentationTestRunner"
+                    android:targetPackage="pl.project13.kanbanery"/>
+
+</manifest>

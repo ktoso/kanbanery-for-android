@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory
+         android:title="@string/homepages_preference_category">
+
+      <PreferenceScreen
+            android:title="@string/kanbanery_homepage_title"
+            android:summary="@string/kanbanery_homepage_summary"
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://www.kanbanery.com"/>
+      </PreferenceScreen>
+
+      <PreferenceScreen
+            android:title="@string/kanbanery_android_homepage_title"
+            android:summary="@string/kanbanery_android_homepage_summary"
+            android:icon="@drawable/ic_github">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://github.com/ktoso/kanbanery-android"/>
+      </PreferenceScreen>
+
+      <PreferenceScreen
+            android:title="@string/blog_project13_title"
+            android:summary="@string/blog_project13_summary"
+            android:icon="@drawable/ic_project13">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://www.blog.project13.pl"/>
+      </PreferenceScreen>
+
+      <!-- todo move away from here -->
+      <PreferenceScreen
+            android:title="@string/get_pro_now_title"
+            android:summary="@string/get_pro_now_summary"
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="market://details?id=pl.project13.kanbanery"/>
+         <!-- todo check if it's ok -->
+      </PreferenceScreen>
+
+      <!-- todo remove this-->
+      <PreferenceScreen
+            android:title="TODO REMOVE ME show cool dialog TODO REMOVE ME"
+            android:summary=""
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:targetPackage="pl.project13.kanbanery"
+                 android:targetClass="pl.project13.kanbanery.ui.activities.dialog.GetPremiumVersionDialog"/>
+      </PreferenceScreen>
+
+      <PreferenceScreen
+            android:title="TODO REMOVE ME !! BUY NOW !! TODO REMOVE ME"
+            android:summary="Get the Premium version by using in-app billing. This requires an up-to-date version of Android Market."
+            android:icon="@drawable/ic_kanbanery">
+
+         <intent android:targetPackage="pl.project13.kanbanery"
+                 android:targetClass="pl.project13.kanbanery.billing.activity.UpgradeToPremiumActivity"/>
+      </PreferenceScreen>
+      <!-- todo remove this-->
+
+   </PreferenceCategory>
+</PreferenceScreen>

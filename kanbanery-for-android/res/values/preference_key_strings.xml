@@ -1,0 +1,7 @@
+<resources>
+   <string name="preference_key_action_notifications">preference_key_action_notifications</string>
+   <string name="preference_key_api_key">preference_key_api_key</string>
+   <string name="preference_key_current_workspace">preference_key_current_workspace</string>
+   <string name="preference_key_current_project">preference_key_current_project</string>
+   <string name="preference_key_show_tutorial">preference_key_show_tutorial</string>
+</resources>

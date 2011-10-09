@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <style name="task_type">
+      <item name="android:textSize">@dimen/task_type</item>
+      <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="repository_name">
+      <item name="android:textSize">20dp</item>
+      <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="task_property_title">
+      <item name="android:textSize">15dp</item>
+      <item name="android:textStyle">bold</item>
+   </style>
+
+   <style name="bold">
+      <item name="android:textStyle">bold</item>
+   </style>
+
+   <!-- Workspace / Project list in WorkspacesAndProjectsActivity -->
+   <style name="workspaces_workspace_label">
+      <item name="android:textSize">22dp</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:paddingLeft">35px</item>
+      <item name="android:paddingTop">15px</item>
+      <item name="android:paddingBottom">15px</item>
+   </style>
+   <style name="workspaces_project_label">
+      <item name="android:textSize">18dp</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:paddingLeft">35px</item>
+      <item name="android:paddingTop">15px</item>
+      <item name="android:paddingBottom">15px</item>
+   </style>
+   <style name="dialog_title">
+      <item name="android:textSize">20dp</item>
+      <item name="android:textStyle">bold</item>
+      <item name="android:padding">5dip</item>
+      <item name="android:gravity">center</item>
+   </style>
+
+   <style name="dialog_create_button">
+      <item name="android:layout_weight">50</item>
+   </style>
+   <style name="dialog_cancel_button">
+      <item name="android:layout_weight">10</item>
+   </style>
+
+</resources>

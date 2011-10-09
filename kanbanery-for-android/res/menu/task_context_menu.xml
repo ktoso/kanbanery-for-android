@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/move_menu_item" android:title="@string/move_menu_item">
+        <menu android:id="@+id/move_sub_menu">
+            <item android:id="@+id/move_to_next_column_menu_item"
+                  android:title="@string/move_right_menu_item"/>
+            <item android:id="@+id/move_to_previous_column_menu_item"
+                  android:title="@string/move_left_menu_item"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/mark_as_done_menu_item"
+          android:title="@string/mark_as_ready_to_pull_menu_item"/>
+    <item android:id="@+id/mark_as_not_done_menu_item"
+          android:title="@string/mark_as_not_ready_to_pull_menu_item"/>
+    <item android:id="@+id/delete_menu_item"
+          android:title="@string/delete_menu_item"/>
+</menu>

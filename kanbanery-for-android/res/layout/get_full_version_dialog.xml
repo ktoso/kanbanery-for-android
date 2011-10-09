@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+   <WebView android:id="@+id/why_should_i_go_pro_text"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+         />
+
+   <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:orientation="horizontal">
+      <Button android:id="@+id/lets_get_it_now_btn"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:gravity="center"
+              android:drawableLeft="@drawable/ic_kanbanery"
+              android:layout_weight="50"
+              android:text="@string/get_pro_now"
+            />
+      <Button android:id="@+id/cancel"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:gravity="center"
+             android:layout_weight="10"
+             android:text="@string/maybe_later"
+             />
+   </LinearLayout>
+
+</LinearLayout>

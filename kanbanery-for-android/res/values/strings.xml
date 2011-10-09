@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="app_name">Kanbanery</string>
+   <string name="kanbanery">Kanbanery</string>
+
+   <!-- Important unlock app name -->
+   <!-- pl.project13.kanbanery.topsecretunlockerapp -->
+   <string name="kanbanery_unlock_app_name_base64">cGwucHJvamVjdDEzLmthbmJhbmVyeS50b3BzZWNyZXR1bmxvY2tlcmFwcA==</string>
+
+   <string name="move_right_menu_item">to the next column</string>
+   <string name="move_left_menu_item">to the previous column</string>
+   <string name="mark_as_ready_to_pull_menu_item">Mark as Ready To Pull</string>
+   <string name="mark_as_not_ready_to_pull_menu_item">Mark as Not Ready To Pull</string>
+   <string name="move_menu_item">Move task to...</string>
+   <string name="next_column">Next column</string>
+   <string name="previous_column">Previous column</string>
+
+   <string name="columns_refresh">Refresh all</string>
+   <string name="delete_menu_item">Delete task</string>
+
+   <string name="sign_in">Sign in</string>
+   <string name="sign_out">Sign out</string>
+
+   <string name="settings">Settings</string>
+
+   <string name="task_estimate">Estimate</string>
+   <string name="task_priority">Priority</string>
+   <string name="task_description">Description</string>
+
+   <!-- headers -->
+   <string name="kanbanery_properties_header">Kanbanery settings</string>
+   <string name="kanbanery_properties_header_summary">Set your username and API key</string>
+
+   <string name="cache_properties_header">Cache preferences</string>
+   <string name="cache_properties_header_summary">Clear or tweak caching mechanisms</string>
+
+   <string name="notification_properties_header">Notifications</string>
+   <string name="notification_properties_header_summary">Setup how and how often you want to be notified</string>
+
+   <string name="about_header">About</string>
+   <string name="about_header_summary">Find out more about Kanbanery</string>
+   <string name="homepages_preference_category">Homepages</string>
+   <string name="kanbanery_homepage_title">kanbanery.com</string>
+   <string name="kanbanery_homepage_summary">Homepage of the web-based Kanban board - Kanbanery</string>
+
+   <string name="kanbanery_android_homepage_title">Kanbanery-Android on github.com</string>
+   <string name="kanbanery_android_homepage_summary">Create issues, feature requests or better - fork me and
+      contribute~!
+   </string>
+
+   <string name="blog_project13_title">Blog.Project13.pl - my personal blog</string>
+   <string name="blog_project13_summary">Interested what I\'m up to next? Visit my blog :-)</string>
+
+   <string name="copyleft">Kanbanery Android is Free Software, hooray!</string>
+
+   <string name="action_notifications_category_title">Kanban Board Action Notifications</string>
+   <string name="use_new_action_notifications_title">New action on Kanban Board</string>
+   <string name="use_new_action_notifications_summary">Fired each time when something changes on the kanban board
+   </string>
+   <string name="action_notification_sound_title">Notification sound</string>
+
+   <string name="notifications_when_wifi_3g_category_title">Fetch data...</string>
+   <string name="kanbanery_account_category">kanbanery.com Account</string>
+
+   <string name="api_key">Kanbanery API Key</string>
+   <string name="api_key_summary">You can find it in your kanbanery.com account preferences</string>
+   <string name="jump_to_api_key_website">Click here to find out what your API Key is</string>
+   <string name="jump_to_api_key_website_summary">Log into your account and navigate to: Account > API</string>
+
+   <string name="projects_category">Select current project</string>
+   <string name="projects_category_summary">All projects across all your workspaces will be displayed here, if API Key
+      is valid.
+   </string>
+
+   <string name="current_project_title">Select \"current\" project</string>
+   <string name="my_watched_repositories_summary">This project will be displayed as default kanban board</string>
+
+   <string name="search_hint">Search Kanbanery</string>
+   <string name="switch_project">View other project</string>
+
+   <string name="assign_task_to">Assign task to...</string>
+   <string name="ok">Ok</string>
+   <string name="images_cache_category">Image Caching Settings</string>
+   <string name="images_cache_category_summary">Kanbanery for Android uses your devices internal memory to cache user
+      images. If you think it\'s using up too much space, try clearing the cache using the button bellow.
+   </string>
+   <string name="clear_image_cache">Clear images cache</string>
+   <string name="clear_image_cache_summary">Remove all cached user images from your devices internal storage</string>
+   <string name="new_column_menu_title">Add column</string>
+
+   <string name="create">Create</string>
+   <string name="cancel">Cancel</string>
+   <string name="new_column_name">Column name:</string>
+
+   <string name="tutorial_category">Tutorial</string>
+   <string name="tutorial_category_summary">Change tutorial settings</string>
+
+   <string name="show_tutorial">Show tutorial on startup</string>
+   <string name="show_tutorial_summary">
+      If you set this to false, a tutorial overlay will be displayed the next
+      time you open a Board/Columns view
+   </string>
+
+   <string name="new_column_after_column">After column:</string>
+   <string name="preference_key_clear_image_cache">preference_key_clear_image_cache</string>
+   <string name="change_task_type">Change task type to:</string>
+   <string name="change_task_estimate">Change task estimate to:</string>
+
+   <string name="get_pro_dialog_title">Get Kanbanery Premium to perform this action</string>
+   <string name="get_pro_now">Go Premium, now!</string>
+   <string name="get_pro_now_title">View Kanbanery on the Android Market</string>
+   <string name="get_pro_now_summary">Give us valuable feedback or ask for new features.</string>
+   <string name="dont_have_an_account_yet_register">Don\'t have an kanbanery account yet?\n
+      Register for one at: http://www.kanbanery.com
+   </string>
+   <string name="create_new_column_label">Create a new Column...</string>
+   <string name="move">MOVE</string>
+
+   <string name="delete">Delete</string>
+   <string name="delete_task_title">Delete task</string>
+   <string name="delete_task_message">Do you really want to delete the \"%s\" task?</string>
+   <string name="view_mode">View mode</string>
+   <string name="view_mode_summary">
+      You can force Kanbanery to be displayed in \"phone\" mode even if you\re on a tablet.
+   </string>
+   <string name="preference_key_force_run_in_phone_mode">preference_key_force_run_in_phone_mode</string>
+   <string name="force_phone_mode">Display using \"Phone mode\", even if on a tablet</string>
+   <string name="force_phone_mode_summary">
+      In phone mode, each column takes a full screen to display.
+      If you\'d rather use Kanbanery this way, and not with the default \"Board\" mode, select this option and restart
+      Kanbanery for Android.
+   </string>
+   <string name="the_password_will_not_be_stored_on_the_device">(The password will only be used to fetch your API Key,
+      and not stored in memory)
+   </string>
+   <string name="create_task">Create task</string>
+   <string name="form_task_title">Title:</string>
+   <string name="form_task_type">Type:</string>
+   <string name="form_task_description">Description:</string>
+   <string name="new_task">New task</string>
+   <string name="create_a_new_task">Create a new Task</string>
+   <string name="comments">Comments:</string>
+   <string name="add_comment">Add comment</string>
+   <string name="create_new_comment_label">Add a comment...</string>
+   <string name="new_comment_body">Comment message:</string>
+   <string name="you_have_no_workspace_why_not_create_one_now">
+      You don\'t yet have a Workspace and Project...\n
+      You can create one by going to kanbanery.com ...\n
+      \n
+      Sadly the API does not support creating a workspace/project,\n
+      but if it does someday - you\'ll be able to create the Workspace \n
+      from Kanbanery for Android within one day - that\'s a promise!
+   </string>
+   <string name="create_workspace_and_project">Create a Workspace and Project</string>
+   <string name="subtasks">Subtasks:</string>
+   <string name="add_subtask">Add Subtask</string>
+   <string name="create_new_subtask_label">Create a new subtask...</string>
+   <string name="new_column_capacity">Work In Progress Limit (capacity):</string>
+   <string name="new_subtask_body_label">Subtask name:</string>
+   <string name="new_subtask_create">Create Subtask</string>
+   <string name="generic_empty_list_view">Seems like there is no data to populate this view!</string>
+   <string name="maybe_later">Maybe later</string>
+   <string name="no_thanks">No, thanks</string>
+   <string name="assign_task_to_label">Assign task to...</string>
+
+
+   <string name="general_preference_category">General settings</string>
+
+   <string name="upgrade_kanbanery_to_pro_label">Find out why and upgrade to Premium!</string>
+   <string name="upgrade_kanbanery_to_pro_summary">Enable write access to your board, post comments, create tasks,
+      columns and more.
+   </string>
+   <string name="kanbanery_for_android_homepage_label">Kanbanery.for.android.project13.pl</string>
+   <string name="kanbanery_for_android_homepage_summary">Take a look at what Kanban and what the Premium version can
+      do.
+   </string>
+   <string name="why_should_i_upgrade">You just performed an action which is only available in Kanbanery Premium. All
+      \'write\' actions, that is,
+      moving columns, tasks, assigning tasks or commenting on them are only available in the upgraded version. You can
+      use this version in read-only mode if you prefer it that way though... :-)
+   </string>
+</resources>

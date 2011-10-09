@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   <PreferenceCategory
+         android:title="@string/kanbanery_account_category">
+
+      <EditTextPreference
+            android:key="@string/preference_key_api_key"
+            android:title="@string/api_key"
+            android:summary="@string/api_key_summary"/>
+
+      <PreferenceScreen
+            android:title="@string/jump_to_api_key_website"
+            android:summary="@string/jump_to_api_key_website_summary">
+
+         <intent android:action="android.intent.action.VIEW"
+                 android:data="http://www.kanbanery.com"/>
+         <!-- todo improve this, need user_id -->
+      </PreferenceScreen>
+
+   </PreferenceCategory>
+
+   <!--<PreferenceCategory-->
+   <!--android:title="@string/projects_category"-->
+   <!--android:summary="@string/projects_category_summary"-->
+   <!--android:dependency="@string/preference_key_api_key">-->
+   <!---->
+   <!--<pl.project13.kanbanery.ui.widgets.preferences.SelectCurrentProjectPreference-->
+   <!--android:key="@string/preference_key_current_project"-->
+   <!--android:title="@string/current_project_title"-->
+   <!--android:summary="@string/my_watched_repositories_summary"/>-->
+   <!--</PreferenceCategory>-->
+
+   <PreferenceCategory
+         android:title="@string/tutorial_category"
+         android:summary="@string/tutorial_category_summary">
+
+      <CheckBoxPreference android:key="@string/preference_key_show_tutorial"
+                          android:defaultValue="true"
+                          android:title="@string/show_tutorial"
+                          android:summary="@string/show_tutorial_summary"/>
+   </PreferenceCategory>
+</PreferenceScreen>

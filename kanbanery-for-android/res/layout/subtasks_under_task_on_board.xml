@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/comments_linear_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView android:text="@string/subtasks"
+              style="@style/bold"
+              android:layout_height="wrap_content"
+              android:layout_width="fill_parent"
+            />
+
+    <!-- the comments-->
+    <LinearLayout android:id="@+id/subtasks_linear_layout"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+       <include layout="@layout/subtask"/>
+    </LinearLayout>
+
+    <!-- add new comment -->
+    <Button android:id="@+id/new_subtask_under_task_details_btn"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawablePadding="10dip"
+            android:paddingRight="20dip"
+            android:drawableLeft="@drawable/icon_tasks"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/add_subtask"
+            />
+</LinearLayout>

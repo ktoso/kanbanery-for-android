@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/widget_layout"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="horizontal"
+        android:background="@color/black">
+
+    <ImageView android:id="@+id/task_owner_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               android:layout_marginRight="6dip"
+               android:src="@drawable/ic_kanbanery"/>
+    <TextView android:id="@+id/how_many_tasks_todo"
+              android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:layout_marginRight="6dip"
+              android:text="You have ... tasks in the TODO column."
+            />
+</LinearLayout>

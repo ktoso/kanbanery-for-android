@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="new_task_menu_title">Add task</string>
+
+    <string name="new_task_task_title">Title:</string>
+    <string name="new_task_task_priority">Priority:</string>
+    <string name="new_task_task_deadline">Deadline:</string>
+    <string name="new_task_task_description">Description:</string>
+    <string name="new_task_task_estimate">Estimate:</string>
+    <string name="new_task_task_type">Type:</string>
+
+    <string name="new_task_task_priority_notice">Choose a priority for this task</string>
+    <string-array name="new_task_task_priorities">
+        <item>Not set</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

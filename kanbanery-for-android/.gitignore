@@ -1,0 +1,16 @@
+*.class
+*.tmp
+*.bak
+
+
+
+.idea
+out
+target
+.classpath
+.project
+.settings
+
+*.apk
+
+res/values/janbanery.xml

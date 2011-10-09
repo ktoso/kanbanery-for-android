@@ -1,0 +1,17 @@
+<resources>
+   <dimen name="column_header">28dp</dimen>
+
+   <dimen name="task_title">28dp</dimen>
+
+   <dimen name="task_type">16dp</dimen>
+
+   <dimen name="small_button_text_size">16dp</dimen>
+
+   <dimen name="owner_maxWidth">6dp</dimen>
+   <dimen name="owner_maxHeight">6dp</dimen>
+
+   <dimen name="owner_small_maxWidth">3dp</dimen>
+   <dimen name="owner_small_maxHeight">3dp</dimen>
+
+   <dimen name="assign_task_dialog_height">300dp</dimen>
+</resources>
